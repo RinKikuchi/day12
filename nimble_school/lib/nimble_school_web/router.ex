@@ -19,6 +19,8 @@ defmodule NimbleSchoolWeb.Router do
     get "/", PageController, :index
     get "/blog", BlogController, :index
     get "/blog/:id", BlogController, :show
+    get "/blog/tag/:tag", BlogController, :showtag
+    get "/blog/faq/:id", BlogController, :showfaq
   end
 
   # Other scopes may use custom stacks.

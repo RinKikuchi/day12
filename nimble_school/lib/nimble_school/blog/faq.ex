@@ -1,10 +1,10 @@
-defmodule NimbleSchool.Blog do
+defmodule NimbleSchool.Faq do
 
   alias NimbleSchool.Blog.Post
 
   use NimblePublisher,
     build: Post,
-    from: Application.app_dir(:nimble_school, "priv/posts/**/*.md"),
+    from: Application.app_dir(:nimble_school, "priv/faqs/**/*.md"),
     as: :posts,
     highlighters: [:makeup_elixir, :makeup_erlang]
 
